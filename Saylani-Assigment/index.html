@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Mart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 id="hello">Mega Mart</h1>
+
+    <hr class="hr-heading">
+
+    <p class="headingpara">Your Complete Shopping Destination</p>
+
+    <div class="main-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="electronics.html">Electronics</a></li>
+            <li><a href="fashion.html">Fashion</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="product">
+        <h1>Product Search</h1>
+        <input type="text" placeholder="Search over 10,000 products">
+        <button class="searchbutton">Search</button>
+    </div>
+
+    <div class="featured">
+        <h1>Featured Products</h1>
+
+        <div class="main-table">
+
+            <table>
+                <h1 class="special">Today's Special Offers</h1>
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td><img src="./images/download (1).jpg" width="200"> <br> Wireless Headphones</td>
+                    <td>
+                        <b>Premium Noise Cancelling Bluetooth Headphones</b>
+                        <ul>
+                            <li>40mm drivers</li>
+                            <li>30-hour battery</li>
+                            <li>IPX4 Waterproof</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <del>61999.00</del> <br> <b>5149.90</b>
+                    </td>
+                    <td>In Stock</td>
+                    <td>
+                        <button class="cart">Add To Cart</button> <br>
+                        Available Questions: 15
+                    </td>
+                </tr>
+            </table>
+
+
+            <hr>
+
+            <table border="1">
+                <tr>
+                    <td>
+                        <img src="images/download.jpg" width="300">
+                    </td>
+                    <td>
+                        <b>Advanced Finance Tracking Smartwatch</b>
+                        <ul>
+                            <li>Heart Rate Monitor</li>
+                            <li>GPS Tracking</li>
+                            <li>Water Resistant</li>
+                        </ul>
+                    </td>
+                    <td><b>$589.99</b></td>
+                    <td>Low Stock</td>
+                    <td>
+                        <button class="cart">Add To Cart</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <form class="shipping-form" action="">
+        <h1>Create New Account</h1>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>First Name</label>
+            <input type="text" required>
+
+            <label>Last Name</label>
+            <input type="text" required>
+
+            <label>Date of Birth</label>
+            <input type="date" required>
+
+            <label>Gender:</label>
+            <input type="radio" value="Male" name="Gender"> Male
+            <input type="radio" name="Gender" value="Female"> Female
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Password:</label>
+            <input type="password" required>
+
+            <label>Phone Number</label>
+            <input type="number" required>
+
+            <label>Subscribe to Newsletter:</label>
+            <input type="checkbox">
+        </fieldset>
+
+        <fieldset>
+            <legend>Shipping Address</legend>
+            <label>Street Address</label>
+            <textarea></textarea>
+
+            <label>Country:</label>
+            <input type="text" required>
+
+            <label>Zip Code:</label>
+            <input type="number" required>
+        </fieldset>
+
+        <button>Create Account</button>
+        <button type="reset">Clear Form</button>
+    </form>
+
+
+    <h1>Product Comparison</h1>
+    <div class="other-table">
+        <table border="2">
+            <tr>
+                <th>Features</th>
+                <th>Basic Model</th>
+                <th>Premium Model</th>
+                <th>Deluxe Model</th>
+            </tr>
+            <tr>
+                <td>Battery Life</td>
+                <td>8 hours</td>
+                <td>12 hours</td>
+                <td>24 hours</td>
+            </tr>
+            <tr>
+                <td>Water Resistance</td>
+                <td>IPX4</td>
+                <td>IPX7</td>
+                <td>IP68</td>
+            </tr>
+            <tr>
+                <td>Warranty</td>
+                <td>1 year</td>
+                <td colspan="2">2 years</td>
+            </tr>
+            <tr>
+                <td style="background-color: #e28f8e; " colspan="4">All prices include VAT</td>
+            </tr>
+        </table>
+    </div>
+
+    <h1>Checkout Process</h1>
+
+    <div class="other-fiedset">
+        <fieldset>
+            <legend>Payment Information</legend>
+            <label>Card Type: </label>
+            <input type="radio" name="type" value="Visa"> Visa
+            <input type="radio" name="type" value="Mastercard"> Mastercard
+            <input type="radio" name="type" value="American Express"> American Express
+    
+            <br>
+            <label>Card Number:</label>
+            <input type="text"  required>
+    
+            <label>Expiry Date:</label>
+            <input type="date" required>
+        </fieldset>
+         
+    <button>Complete Purchase</button>
+
+    <fieldset>
+        <legend>Order Summary</legend>
+        <table border="2" >
+            <tr>
+                <th>item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Wireless Headphones</td>
+                <td>$15.20</td>
+                <td>$200.9</td>
+                
+            </tr>
+            
+            <tr>
+                <td>Shping</td>
+                <td>$312.7</td>
+                <td>$312.7</td>
+            </tr>
+            <tr>
+                <td colspan="2" >total</td>
+                <td>$300.3</td>
+
+            </tr>
+        </table>
+    </fieldset>
+
+    </div>
+
+   
+    <h1>Product Video</h1>
+    <video poster="./images/th (1).jpeg" width="500" height="200" controls>
+        <source src="./images/qasim_panhwer.mp4">
+    </video>
+
+    <br>
+    <audio src="./images/audio.opus" controls></audio>
+
+    
+    <div class="Mailprocess">
+        <h1><i>Contact Us</i></h1>
+    <p>Email: <a href="mailto:hafizpanhwer111@gmail.com">hafizpanhwer111@gmail.com</a></p>
+    <p>Phone: <a href="tel:+92367676767">+92 367676767</a></p>
+    <p>Address: 123 Commerce Street, New York, NY 1001</p>
+    <p>Here is our location:</p>
+
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;"
+        allowfullscreen></iframe>
+
+    <h1>Check Out the Latest Video</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OTE43YoYOTk" frameborder="0"
+        allowfullscreen></iframe>
+
+<div class="footer">
+    <ul style="list-style-type: none; padding: 0;">
+        <li><a href="terms.html">Terms and Services</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="return.html">Return Policy</a></li>
+    </ul>
+
+    <p>© 2023 Mega Mart, All Rights Reserved</p>
+    <p id="hello">Follow us on <a href="social_media.html">Social Media</a></p>
+
+</div>
+</body>
+
+</html>
